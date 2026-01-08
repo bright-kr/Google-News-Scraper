@@ -1,10 +1,10 @@
 # Google News Scraper
 
-[![Promo](https://github.com/luminati-io/Google-News-Scraper/blob/main/Proxies%20and%20scrapers%20GitHub%20bonus%20banner.png)](https://brightdata.com/products/serp-api/google-search/news?promo=github15) 
+[![Promo](https://github.com/luminati-io/Google-News-Scraper/blob/main/Proxies%20and%20scrapers%20GitHub%20bonus%20banner.png)](https://brightdata.co.kr/products/serp-api/google-search/news?promo=github15) 
 
-This repository provides two methods to collect news data from Google News.
-- **Free Method:** Perfect for small projects and learning
-- **Google News API:** Ideal for large-scale, reliable, real-time data extraction
+이 리포지토리는 Google News에서 뉴스 데이터를 수집하는 두 가지 방법을 제공합니다.
+- **무료 방법:** 소규모 프로젝트 및 학습에 적합합니다
+- **Google News API:** 대규모의 신뢰할 수 있는 실시간 데이터 추출에 이상적입니다
 
 ## Table of Contents
 
@@ -26,33 +26,33 @@ This repository provides two methods to collect news data from Google News.
 ## Method 1: Free Google News Scraper
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/a7d34ffe-17c6-4c59-acbf-aaf84ed1b13e">
 
-This free tool lets you collect news articles based on any topic you're interested in. You'll get everything from headlines to publication dates, all neatly organized.
+이 무료 도구를 사용하면 관심 있는 어떤 주제든 기반으로 뉴스 기사를 수집할 수 있습니다. 헤드라인부터 발행 날짜까지 모든 정보를 깔끔하게 정리된 형태로 받을 수 있습니다.
 
 ### Prerequisites
 - Python 3.9+
-- Two key packages:
-  - [aiohttp](https://pypi.org/project/aiohttp/) (for making requests)
-  - [beautifulsoup4](https://pypi.org/project/beautifulsoup4/) (for parsing HTML)
+- 두 가지 주요 패키지:
+  - [aiohttp](https://pypi.org/project/aiohttp/) (リクエスト를 보내기 위해 사용합니다)
+  - [beautifulsoup4](https://pypi.org/project/beautifulsoup4/) (HTML을 파싱하기 위해 사용합니다)
 
 ### Installation
-1. Clone the repository:
+1. 리포지토리를 클론합니다:
 
     ```bash
     git clone https://github.com/luminati-io/Google-News-Scraper.git
     ```
-3. Navigate to the project directory:
+3. 프로젝트 디렉터리로 이동합니다:
 
     ```bash
     cd Google-News-Scraper
     ```
-4. Install required dependencies:
+4. 필요한 의존성을 설치합니다:
 
     ```bash
     pip install -r requirements.txt
     ```
 ### Usage
-1. Navigate to the `free_scraper` directory and open `main.py`
-2. Define your search terms in the file:
+1. `free_scraper` 디렉터리로 이동한 다음 `main.py`를 엽니다
+2. 파일에서 검색어를 정의합니다:
 
     ```bash
     search_terms = [
@@ -62,17 +62,17 @@ This free tool lets you collect news articles based on any topic you're interest
         # Add more search terms as needed
     ]
     ```
-3. Run the scraper:
+3. スクレイパー를 실행합니다:
 
     ```bash
     python main.py
     ```
 ### Output
-The scraper generates JSON files:
-- Individual JSON files for each search term
-- A `combined_results.json` file containing data from all search terms
+スクレイパー는 JSON 파일을 생성합니다:
+- 각 검색어별 개별 JSON 파일
+- 모든 검색어의 데이터를 포함하는 `combined_results.json` 파일
 
-Each article in the JSON output contains:
+JSON 출력에서 각 기사는 다음을 포함합니다:
 ```json
 {
     "title": "OpenAI launches full o1 model with image uploads and analysis, debuts ChatGPT Pro - VentureBeat",
@@ -84,37 +84,37 @@ Each article in the JSON output contains:
 }
 ```
 
-👉 You can find a complete example output in our [free_scraper/data/](https://github.com/luminati-io/Google-News-Scraper/tree/main/free_scraper/data) directory.
+👉 전체 예시 출력은 [free_scraper/data/](https://github.com/luminati-io/Google-News-Scraper/tree/main/free_scraper/data) 디렉터리에서 확인할 수 있습니다.
 
 ## Common Scraping Challenges
-Scraping data from Google News can be quite challenging. Here are some common issues you may encounter:
-1. **CAPTCHA and Anti-Bot Mechanisms:** Google often employs CAPTCHAs or rate-limiting mechanisms to prevent bots from accessing its content.
-2. **Scalability:** Scraping large volumes of data or performing high-frequency scraping can overwhelm free scrapers.
-3. **Global and Localized News Access:** Customizing scrapers for different regions and languages often requires significant effort and manual adjustments.
+Google News에서 데이터를 スクレイピング하는 것은 꽤 까다로울 수 있습니다. 다음은 흔히 마주칠 수 있는 이슈들입니다:
+1. **CAPTCHA 및 アンチボット 메커니즘:** Google은 봇이 콘텐츠에 접근하는 것을 막기 위해 CAPTCHA 또는 レート制限 메커니즘을 자주 사용합니다.
+2. **확장성:** 대량의 데이터를 スクレイピング하거나 고빈도 スクレイピング을 수행하면 무료 スクレイパー가 과부하될 수 있습니다.
+3. **글로벌 및 로컬라이즈드 뉴스 접근:** 서로 다른 지역과 언어에 맞게 スクレイパー를 커스터마이징하려면 상당한 노력과 수동 조정이 필요한 경우가 많습니다.
 
 ## Method 2: Bright Data Google News API
-Want something more robust? Let's talk about [Bright Data's Google News API](https://brightdata.com/products/serp-api/google-search/news). Here's why it's worth considering:
+더 강력한 솔루션을 원하시나요? [Bright Data's Google News API](https://brightdata.co.kr/products/serp-api/google-search/news)에 대해 알아보겠습니다. 고려할 만한 이유는 다음과 같습니다:
 
 ### Key Benefits
-- **Zero Infrastructure Headaches:** Forget about proxies and CAPTCHAs
-- **Built to Scale:** Handles heavy traffic with exceptional performance
-- **Global Reach:** Get news from any country, any language
-- **Privacy First:** GDPR & CCPA compliant
-- **Pay for Success:** Only charged for successful requests
-- **Try Before You Buy:** 20 free API calls to test things out
+- **인프라 걱정 제로:** プロキシ 및 CAPTCHA를 신경 쓸 필요가 없습니다
+- **확장성에 최적화:** 뛰어난 성능으로 높은 트래픽을 처리합니다
+- **글로벌 범위:** 어느 국가에서든, 어떤 언어로든 뉴스를 가져올 수 있습니다
+- **프라이버시 우선:** GDPR 및 CCPA 준수
+- **성공 기반 과금:** 성공한 リクエスト에 대해서만 과금됩니다
+- **구매 전 테스트:** 테스트를 위한 무료 API 호출 20회 제공
 
 ## Getting Started with the Google News API
-> For a detailed guide on setting up the Google News API, check our [Step-by-Step Setup Guide](https://github.com/luminati-io/Google-News-Scraper/blob/main/google_news_api_setup.md).
+> Google News API 설정에 대한 자세한 가이드는 [Step-by-Step Setup Guide](https://github.com/luminati-io/Google-News-Scraper/blob/main/google_news_api_setup.md)를 확인하십시오.
 ### Key Input Parameters
 | **Parameter**| **Required?** | **Description**                                            | **Example**               |
 |---------------|--------------|------------------------------------------------------------|---------------------------|
-| `url`         | Yes          | Base Google News URL                                   | `news.google.com`|
-| `keyword`     | Yes          | Your search topic                        | `"ChatGPT"`             |
-| `country`     | No           | Where to get news from                                | `"US"`                    |
-| `language`    | No           | What language you want                                | `"en"`                    |
+| `url`         | Yes          | 기본 Google News URL                                   | `news.google.com`|
+| `keyword`     | Yes          | 검색 주제                        | `"ChatGPT"`             |
+| `country`     | No           | 뉴스를 가져올 국가                                | `"US"`                    |
+| `language`    | No           | 원하는 언어                                | `"en"`                    |
 
 ### Sample Result
-Here’s what the API returns:
+API는 다음과 같은 결과를 반환합니다:
 ```json
 {
     "url": "https://www.tomsguide.com/news/live/12-days-of-openai-live-blog-chatgpt-sora",
@@ -134,10 +134,10 @@ Here’s what the API returns:
     },
 }
 ```
-👉 You can find a complete example output in our [news_scraper_output.json](https://github.com/luminati-io/Google-News-Scraper/blob/main/google-news-api-scraper/data/news_scraper_output.json) file.
+👉 전체 예시 출력은 [news_scraper_output.json](https://github.com/luminati-io/Google-News-Scraper/blob/main/google-news-api-scraper/data/news_scraper_output.json) 파일에서 확인할 수 있습니다.
 
 ### Ready-to-Use Python Code
-Here's a script to get you started:
+다음은 시작을 위한 스크립트입니다:
 ```python
 import requests
 import json
@@ -211,7 +211,7 @@ class BrightDataNews:
         )
         return response.json()
 ```
-Here's how to use it:
+사용 방법은 다음과 같습니다:
 ```python
 # Initialize the client
 news_client = BrightDataNews("<YOUR_API_TOKEN>")
@@ -240,33 +240,33 @@ except Exception as e:
     print(f"Collection failed: {str(e)}")
 ```
 ### Understanding the API Implementation
-1. **Setting Up Your API Token**
-    - First things first: you'll need an API token
-    - If you haven't got one yet, check out our [setup guide](https://github.com/luminati-io/Google-News-Scraper/blob/main/google_news_api_setup.md)
-2. **Starting the Collection**
-    - Pass your search parameters to the API
-    - You'll get back a `snapshot_id`
-3. **Monitoring Progress**
-    - The process takes a few minutes
-    - Our code checks the status automatically:
-      - "running" = Still collecting your data
-      - "ready" = Time to collect your results!
-4. **Getting Your Data**
-    - Once the status shows "ready", we fetch and save your results
-    - Data comes in clean JSON format
-    - Each article includes all the fields we discussed earlier
+1. **API 토큰 설정**
+    - 우선 API 토큰이 필요합니다
+    - 아직 토큰이 없다면 [setup guide](https://github.com/luminati-io/Google-News-Scraper/blob/main/google_news_api_setup.md)를 확인하십시오
+2. **수집 시작**
+    - 검색 파라미터를 API에 전달합니다
+    - 그러면 `snapshot_id`가 반환됩니다
+3. **진행 상황 모니터링**
+    - 이 프로세스는 몇 분 정도 걸립니다
+    - 본 코드는 상태를 자동으로 확인합니다:
+      - "running" = 데이터 수집이 아직 진행 중입니다
+      - "ready" = 결과를 수집할 시간입니다!
+4. **데이터 가져오기**
+    - 상태가 "ready"로 표시되면 결과를 가져와 저장합니다
+    - 데이터는 정돈된 JSON 형식으로 제공됩니다
+    - 각 기사에는 앞서 설명한 모든 필드가 포함됩니다
 
 ## Customizing Your Data Collection
-You can use the following parameters to fine-tune your results:
+다음 파라미터를 사용하여 결과를 세밀하게 조정할 수 있습니다:
 | **Parameter**       | **Type**   | **Description**                                            | **Example**                  |
 |---------------------|------------|------------------------------------------------------------|------------------------------|
-| `limit`             | `integer`  | Max results per input                                   | `limit=10`                   |
-| `include_errors`    | `boolean`  | Get error reports for troubleshooting                     | `include_errors=true`        |
-| `notify`            | `url`      | Webhook notification URL to be notified upon completion  | `notify=https://notify-me.com/` |
-| `format`            | `enum`     | Output format (e.g., JSON, NDJSON, JSONL, CSV)         | `format=json`                |
+| `limit`             | `integer`  | 입력당 최대 결과 수                                   | `limit=10`                   |
+| `include_errors`    | `boolean`  | 트러블슈팅을 위한 오류 보고서를 가져옵니다                     | `include_errors=true`        |
+| `notify`            | `url`      | 완료 시 알림을 받을 Webhook 알림 URL  | `notify=https://notify-me.com/` |
+| `format`            | `enum`     | 출력 형식(예: JSON, NDJSON, JSONL, CSV)         | `format=json`                |
 
-💡 **Pro Tip:** You can also select whether to deliver the data to an [external storage](https://docs.brightdata.com/scraping-automation/web-data-apis/web-scraper-api/overview#via-deliver-to-external-storage) or to deliver it to a [webhook](https://docs.brightdata.com/scraping-automation/web-data-apis/web-scraper-api/overview#via-webhook).
+💡 **Pro Tip:** 데이터를 [external storage](https://docs.brightdata.com/scraping-automation/web-data-apis/web-scraper-api/overview#via-deliver-to-external-storage)로 전달할지, 또는 [webhook](https://docs.brightdata.com/scraping-automation/web-data-apis/web-scraper-api/overview#via-webhook)으로 전달할지도 선택할 수 있습니다.
 
 ----
 
-Need more details? Check the [official API docs](https://docs.brightdata.com/scraping-automation/web-data-apis/web-scraper-api/overview).
+더 많은 세부 정보가 필요하신가요? [official API docs](https://docs.brightdata.com/scraping-automation/web-data-apis/web-scraper-api/overview)를 확인하십시오.
