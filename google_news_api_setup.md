@@ -31,4 +31,4 @@
 
 9. 파라미터를 조정하면 오른쪽에 CURL 명령이 생성됩니다. 다음을 수행할 수 있습니다:
    - 이 명령을 사용하여 [Trigger Data Collection API](https://docs.brightdata.com/scraping-automation/web-data-apis/web-scraper-api/trigger-a-collection)를 직접 실행합니다
-   - [코드](https://github.com/luminati-io/Google-News-Scraper?tab=readme-ov-file#ready-to-use-python-code)의 `_trigger_collection` 함수에 [이 파라미터를 전달](https://github.com/luminati-io/Google-News-Scraper?tab=readme-ov-file#key-input-parameters)합니다
+   - [코드](https://github.com/bright-kr/Google-News-Scraper?tab=readme-ov-file#ready-to-use-python-code)의 `_trigger_collection` 함수에 [이 파라미터를 전달](https://github.com/bright-kr/Google-News-Scraper?tab=readme-ov-file#key-input-parameters)합니다
