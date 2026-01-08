@@ -1,6 +1,6 @@
 # Google News Scraper
 
-[![Promo](https://github.com/luminati-io/Google-News-Scraper/blob/main/Proxies%20and%20scrapers%20GitHub%20bonus%20banner.png)](https://brightdata.co.kr/products/serp-api/google-search/news?promo=github15) 
+[![Promo](https://github.com/bright-kr/Google-News-Scraper/blob/main/Proxies%20and%20scrapers%20GitHub%20bonus%20banner.png)](https://brightdata.co.kr/products/serp-api/google-search/news?promo=github15) 
 
 이 리포지토리는 Google News에서 뉴스 데이터를 수집하는 두 가지 방법을 제공합니다.
 - **무료 방법:** 소규모 프로젝트 및 학습에 적합합니다
@@ -38,7 +38,7 @@
 1. 리포지토리를 클론합니다:
 
     ```bash
-    git clone https://github.com/luminati-io/Google-News-Scraper.git
+    git clone https://github.com/bright-kr/Google-News-Scraper.git
     ```
 3. 프로젝트 디렉터리로 이동합니다:
 
@@ -84,7 +84,7 @@ JSON 출력에서 각 기사는 다음을 포함합니다:
 }
 ```
 
-👉 전체 예시 출력은 [free_scraper/data/](https://github.com/luminati-io/Google-News-Scraper/tree/main/free_scraper/data) 디렉터리에서 확인할 수 있습니다.
+👉 전체 예시 출력은 [free_scraper/data/](https://github.com/bright-kr/Google-News-Scraper/tree/main/free_scraper/data) 디렉터리에서 확인할 수 있습니다.
 
 ## Common Scraping Challenges
 Google News에서 데이터를 スクレイピング하는 것은 꽤 까다로울 수 있습니다. 다음은 흔히 마주칠 수 있는 이슈들입니다:
@@ -104,7 +104,7 @@ Google News에서 데이터를 スクレイピング하는 것은 꽤 까다로�
 - **구매 전 테스트:** 테스트를 위한 무료 API 호출 20회 제공
 
 ## Getting Started with the Google News API
-> Google News API 설정에 대한 자세한 가이드는 [Step-by-Step Setup Guide](https://github.com/luminati-io/Google-News-Scraper/blob/main/google_news_api_setup.md)를 확인하십시오.
+> Google News API 설정에 대한 자세한 가이드는 [Step-by-Step Setup Guide](https://github.com/bright-kr/Google-News-Scraper/blob/main/google_news_api_setup.md)를 확인하십시오.
 ### Key Input Parameters
 | **Parameter**| **Required?** | **Description**                                            | **Example**               |
 |---------------|--------------|------------------------------------------------------------|---------------------------|
@@ -134,7 +134,7 @@ API는 다음과 같은 결과를 반환합니다:
     },
 }
 ```
-👉 전체 예시 출력은 [news_scraper_output.json](https://github.com/luminati-io/Google-News-Scraper/blob/main/google-news-api-scraper/data/news_scraper_output.json) 파일에서 확인할 수 있습니다.
+👉 전체 예시 출력은 [news_scraper_output.json](https://github.com/bright-kr/Google-News-Scraper/blob/main/google-news-api-scraper/data/news_scraper_output.json) 파일에서 확인할 수 있습니다.
 
 ### Ready-to-Use Python Code
 다음은 시작을 위한 스크립트입니다:
@@ -242,7 +242,7 @@ except Exception as e:
 ### Understanding the API Implementation
 1. **API 토큰 설정**
     - 우선 API 토큰이 필요합니다
-    - 아직 토큰이 없다면 [setup guide](https://github.com/luminati-io/Google-News-Scraper/blob/main/google_news_api_setup.md)를 확인하십시오
+    - 아직 토큰이 없다면 [setup guide](https://github.com/bright-kr/Google-News-Scraper/blob/main/google_news_api_setup.md)를 확인하십시오
 2. **수집 시작**
     - 검색 파라미터를 API에 전달합니다
     - 그러면 `snapshot_id`가 반환됩니다
