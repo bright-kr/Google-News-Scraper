@@ -31,7 +31,7 @@
 ### Prerequisites
 - Python 3.9+
 - 두 가지 주요 패키지:
-  - [aiohttp](https://pypi.org/project/aiohttp/) (リクエスト를 보내기 위해 사용합니다)
+  - [aiohttp](https://pypi.org/project/aiohttp/) (요청를 보내기 위해 사용합니다)
   - [beautifulsoup4](https://pypi.org/project/beautifulsoup4/) (HTML을 파싱하기 위해 사용합니다)
 
 ### Installation
@@ -87,20 +87,20 @@ JSON 출력에서 각 기사는 다음을 포함합니다:
 👉 전체 예시 출력은 [free_scraper/data/](https://github.com/bright-kr/Google-News-Scraper/tree/main/free_scraper/data) 디렉터리에서 확인할 수 있습니다.
 
 ## Common Scraping Challenges
-Google News에서 데이터를 スクレイピング하는 것은 꽤 까다로울 수 있습니다. 다음은 흔히 마주칠 수 있는 이슈들입니다:
-1. **CAPTCHA 및 アンチボット 메커니즘:** Google은 봇이 콘텐츠에 접근하는 것을 막기 위해 CAPTCHA 또는 レート制限 메커니즘을 자주 사용합니다.
-2. **확장성:** 대량의 데이터를 スクレイピング하거나 고빈도 スクレイピング을 수행하면 무료 スクレイパー가 과부하될 수 있습니다.
+Google News에서 데이터를 스크레이핑하는 것은 꽤 까다로울 수 있습니다. 다음은 흔히 마주칠 수 있는 이슈들입니다:
+1. **CAPTCHA 및 안티봇 메커니즘:** Google은 봇이 콘텐츠에 접근하는 것을 막기 위해 CAPTCHA 또는 속도 제한 메커니즘을 자주 사용합니다.
+2. **확장성:** 대량의 데이터를 스크레이핑하거나 고빈도 스크레이핑을 수행하면 무료 スクレイパー가 과부하될 수 있습니다.
 3. **글로벌 및 로컬라이즈드 뉴스 접근:** 서로 다른 지역과 언어에 맞게 スクレイパー를 커스터마이징하려면 상당한 노력과 수동 조정이 필요한 경우가 많습니다.
 
 ## Method 2: Bright Data Google News API
 더 강력한 솔루션을 원하시나요? [Bright Data's Google News API](https://brightdata.co.kr/products/serp-api/google-search/news)에 대해 알아보겠습니다. 고려할 만한 이유는 다음과 같습니다:
 
 ### Key Benefits
-- **인프라 걱정 제로:** プロキシ 및 CAPTCHA를 신경 쓸 필요가 없습니다
+- **인프라 걱정 제로:** 프록시 및 CAPTCHA를 신경 쓸 필요가 없습니다
 - **확장성에 최적화:** 뛰어난 성능으로 높은 트래픽을 처리합니다
 - **글로벌 범위:** 어느 국가에서든, 어떤 언어로든 뉴스를 가져올 수 있습니다
 - **프라이버시 우선:** GDPR 및 CCPA 준수
-- **성공 기반 과금:** 성공한 リクエスト에 대해서만 과금됩니다
+- **성공 기반 과금:** 성공한 요청에 대해서만 과금됩니다
 - **구매 전 테스트:** 테스트를 위한 무료 API 호출 20회 제공
 
 ## Getting Started with the Google News API
